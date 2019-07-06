@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
-import 'package:flutter_bx_exchange/flutter_bx_exchange.dart';
+import 'package:flutter_bx_exchange/bx_exchange_service.dart';
+import 'package:flutter_bx_exchange/dao/bx_pair_currency_dao.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,32 +10,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  List<BxPairCurrencyBxDao> listPairCurrency;
+  BxExchangeService service = BxExchangeService();
 
   @override
   void initState() {
+    listPairCurrency = List();
     super.initState();
-    initPlatformState();
-  }
-
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      platformVersion = await FlutterBxExchange.platformVersion;
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-      _platformVersion = platformVersion;
-    });
   }
 
   @override
@@ -45,12 +24,34 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: Text('FLUTTER BX'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
+        body: FutureBuilder(future: service.fetchMarketData(),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                listPairCurrency = snapshot.data;
+                return buildDataMarketListView();
+              }
+              else if (snapshot.hasError) {
+                print(snapshot.error);
+                return Center(child: Text("Error"));
+              } else {
+                return Center(child: CircularProgressIndicator());
+              }
+            }),
       ),
     );
+  }
+
+  Widget buildDataMarketListView() {
+    return ListView.builder(
+      itemCount: listPairCurrency.length,
+    itemBuilder: (context,index){
+      return buildRowPairCurrency(listPairCurrency[index]);
+    });
+  }
+
+  Widget buildRowPairCurrency(BxPairCurrencyBxDao pair) {
+    return Text("${pair.primaryCurrency}/${pair.secondaryCurrency}");
   }
 }

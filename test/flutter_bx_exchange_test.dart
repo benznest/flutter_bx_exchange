@@ -1,21 +1,7 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_bx_exchange/flutter_bx_exchange.dart';
+import 'package:flutter_bx_exchange/bx_exchange_service.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('flutter_bx_exchange');
 
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
-
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
-
-  test('getPlatformVersion', () async {
-    expect(await FlutterBxExchange.platformVersion, '42');
-  });
 }
