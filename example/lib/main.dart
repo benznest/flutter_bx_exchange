@@ -58,23 +58,38 @@ Future main() async {
 
 
 
-  var response = await bx.fetchBalance();
-  if(response.success){
-    var balances = response.balance;
-    for(var balance in balances.listBalanceCurrency){
+//  var response = await bx.fetchBalance();
+//  if(response.success){
+//    var balances = response.balance;
+//    for(var balance in balances.listBalanceCurrency){
       //  balance.currency;
       //  balance.available;
       //  balance.deposits;
       //  balance.orders;
       //  balance.total;
       //  balance.withdrawals;
+//    }
+//  }else{
+//    print(response.error);
+//  }
+
+  var response = await bx.fetchOpenOrders(pairingId: 1, orderType: BxTradeType.SELL);
+    if(response.success){
+    for(var order in response.orders){
+      //  order.pairingId;
+      //  order.orderId;
+      //  order.orderType;
+      //  order.rate;
+      //  order.amount;
+      //  order.date;
     }
   }else{
     print(response.error);
   }
 
 
-//  BxOpenOrderResponseDao orders = await service.fetchOpenOrders(pairingId: 1, type: BxTradeType.SELL, printJson: true);
+
+
 //  await service.fetchTransactionHistory(startDate: "2019-10-10", printJson: true);
 //  BxWithdrawHistoryDao withdrawHistory = await service.fetchWithdrawHistory(printJson: true);
 //  BxDepositAddressDao depositAddress = await service.fetchDepositAddress(currency: "BTC", printJson: true);

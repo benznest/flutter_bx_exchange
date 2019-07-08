@@ -139,7 +139,7 @@ var bx = BxExchangeService(
 ```
 
 
-### Balance
+### Get Balance
 
 Return all currencies with balance information including available, withdrawals, deposit, open order.
 
@@ -154,6 +154,28 @@ Return all currencies with balance information including available, withdrawals,
       //  balance.orders;
       //  balance.total;
       //  balance.withdrawals;
+    }
+  }else{
+    print(response.error);
+  }
+```
+
+
+
+### Get Open Orders
+
+Returns current orders with option BUY / SELL.
+
+```dart
+  var response = await bx.fetchOpenOrders(pairingId: 1, orderType: BxTradeType.SELL);
+    if(response.success){
+    for(var order in response.orders){
+      //  order.pairingId;
+      //  order.orderId;
+      //  order.orderType;
+      //  order.rate;
+      //  order.amount;
+      //  order.date;
     }
   }else{
     print(response.error);
