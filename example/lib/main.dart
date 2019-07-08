@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bx_exchange/bx_exchange_service.dart';
 import 'package:flutter_bx_exchange/bx_trade_type.dart';
+import 'package:flutter_bx_exchange/bx_transaction_type.dart';
 import 'package:flutter_bx_exchange/dao/apiKey/bx_api_key.dart';
 import 'package:flutter_bx_exchange/dao/current_pairings/bx_pair_curency_meta_dao.dart';
 import 'package:flutter_bx_exchange/dao/get_deposit_address/bx_deposit_address_dao.dart';
@@ -25,7 +26,6 @@ Future main() async {
 //    currency.orderbook;
 //  }
 
-
 //  List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings(printJson: true);
 //    for(var currency in list){
 //    currency.pairingId;
@@ -35,19 +35,16 @@ Future main() async {
 //    currency.primaryMin;
 //  }
 
-
 //  var orderbook = await bx.fetchOrderBook(pairingId: 1);
 //  orderbook.pairingsId;
 //  orderbook.asks;
 //  orderbook.bids;
-
 
 //  var recent = await bx.fetchRecentTrade(pairingId: 1);
 //  recent.pairingId;
 //  recent.highBid;
 //  recent.lowAsk;
 //  recent.trades;
-
 
 //  var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
 //  history.high;
@@ -56,41 +53,49 @@ Future main() async {
 //  history.open;
 //  history.volume;
 
-
-
 //  var response = await bx.fetchBalance();
 //  if(response.success){
 //    var balances = response.balance;
 //    for(var balance in balances.listBalanceCurrency){
-      //  balance.currency;
-      //  balance.available;
-      //  balance.deposits;
-      //  balance.orders;
-      //  balance.total;
-      //  balance.withdrawals;
+  //  balance.currency;
+  //  balance.available;
+  //  balance.deposits;
+  //  balance.orders;
+  //  balance.total;
+  //  balance.withdrawals;
 //    }
 //  }else{
 //    print(response.error);
 //  }
 
-  var response = await bx.fetchOpenOrders(pairingId: 1, orderType: BxTradeType.SELL);
-    if(response.success){
-    for(var order in response.orders){
-      //  order.pairingId;
-      //  order.orderId;
-      //  order.orderType;
-      //  order.rate;
-      //  order.amount;
-      //  order.date;
+//  var response = await bx.fetchOpenOrders(pairingId: 1, orderType: BxTradeType.SELL);
+//    if(response.success){
+//    for(var order in response.orders){
+  //  order.pairingId;
+  //  order.orderId;
+  //  order.orderType;
+  //  order.rate;
+  //  order.amount;
+  //  order.date;
+//    }
+//  }else{
+//    print(response.error);
+//  }
+
+  var response = await bx.fetchTransactionHistory(currency: "BTC", transactionType: BxTransactionType.WITHDRAW, startDate: "2019-01-01", endDate: "2019-05-01");
+  if (response.success) {
+    for (var tx in response.transactions) {
+      //  tx.currency;
+      //  tx.amount;
+      //  tx.transactionId;
+      //  tx.date;
+      //  tx.type;
+      //  tx.refId;
     }
-  }else{
+  } else {
     print(response.error);
   }
 
-
-
-
-//  await service.fetchTransactionHistory(startDate: "2019-10-10", printJson: true);
 //  BxWithdrawHistoryDao withdrawHistory = await service.fetchWithdrawHistory(printJson: true);
 //  BxDepositAddressDao depositAddress = await service.fetchDepositAddress(currency: "BTC", printJson: true);
 //  await service.createOrder(pairingId: 1,

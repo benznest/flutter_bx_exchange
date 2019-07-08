@@ -184,6 +184,34 @@ Returns current orders with option BUY / SELL.
 
 
 
+### Get Transaction History
+
+Get your own balance affecting transaction history, such as trades, withdrawals and deposits.
+
+```dart
+  var response = await bx.fetchTransactionHistory();
+  if (response.success) {
+    for (var tx in response.transactions) {
+      //  tx.currency;
+      //  tx.amount;
+      //  tx.transactionId;
+      //  tx.date;
+      //  tx.type;
+      //  tx.refId;
+    }
+  } else {
+    print(response.error);
+  }
+```
+
+You can add conditions to display various history transactions.
+
+```dart
+  var response = await bx.fetchTransactionHistory(currency: "BTC", transactionType: BxTransactionType.WITHDRAW, startDate: "2019-01-01", endDate: "2019-05-01");
+```
+
+
+
 
 
 
