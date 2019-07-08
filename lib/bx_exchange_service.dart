@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bx_exchange/bx_auth_utils.dart';
 import 'package:flutter_bx_exchange/bx_trade_type.dart';
 import 'package:flutter_bx_exchange/bx_transaction_type.dart';
+import 'package:flutter_bx_exchange/bx_utils.dart';
 import 'package:flutter_bx_exchange/dao/apiKey/bx_api_key.dart';
 import 'package:flutter_bx_exchange/dao/balance/bx_balance_response_dao.dart';
 import 'package:flutter_bx_exchange/dao/cancel_order/bx_cancel_order_response_dao.dart';
@@ -71,7 +72,6 @@ class BxExchangeService {
   ///
   BxApiKey apiKeyCancelOrder;
 
-
   BxExchangeService({this.apiKeyGeneral, this.apiKeyCreateOrder, this.apiKeyCancelOrder});
 
   ///
@@ -97,10 +97,11 @@ class BxExchangeService {
     BxMarketDataDao dataMarket = BxMarketDataDao.fromJson(responseJson);
     if (printJson) {
       print(url);
-      print(dataMarket.toJson());
+      printPrettyJson(dataMarket.toJson());
     }
     return dataMarket.data;
   }
+
 
   ///
   /// This is a public api.
@@ -115,7 +116,7 @@ class BxExchangeService {
     BxCurrentPairingsDao currentPairings = BxCurrentPairingsDao.fromJson(responseJson);
     if (printJson) {
       print(url);
-      print(currentPairings.toJson());
+      printPrettyJson(currentPairings.toJson());
     }
     return currentPairings.data;
   }
@@ -131,7 +132,7 @@ class BxExchangeService {
     BxOrderBookDao orderBook = BxOrderBookDao.fromJson(pairingId, responseJson);
     if (printJson) {
       print(url);
-      print(orderBook.toJson());
+      printPrettyJson(orderBook.toJson());
     }
     return orderBook;
   }
@@ -141,15 +142,13 @@ class BxExchangeService {
   /// Returns a list of 10 most recent trades, and top 10 asks and bids in order book.
   ///
   Future<BxRecentTradeDao> fetchRecentTrade({int pairingId = 1, bool printJson = false}) async {
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_RECENT_TRADE, {"pairing": "$pairingId"})
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_RECENT_TRADE, {"pairing": "$pairingId"}).toString();
     Response response = await http.get(url);
     final responseJson = json.decode(response.body);
     BxRecentTradeDao recentTrade = BxRecentTradeDao.fromJson(pairingId, responseJson);
     if (printJson) {
       print(url);
-      print(recentTrade.toJson());
+      printPrettyJson(recentTrade.toJson());
     }
     return recentTrade;
   }
@@ -158,19 +157,14 @@ class BxExchangeService {
   /// This is a public api.
   /// Returns Weighted Average, Volume, Open, Close, Low and High prices for the specified date.
   ///
-  Future<BxHistoricalTradeDataDao> fetchHistoricalTradeData({
-    int pairingId = 1,
-    @required String date,
-    bool printJson = false}) async {
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_HISTORICAL, {"pairing": "$pairingId", "date": date})
-        .toString();
+  Future<BxHistoricalTradeDataDao> fetchHistoricalTradeData({int pairingId = 1, @required String date, bool printJson = false}) async {
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_HISTORICAL, {"pairing": "$pairingId", "date": date}).toString();
     Response response = await http.get(url);
     final responseJson = json.decode(response.body);
     BxHistoricalTradeDataResponseDao responseHistorical = BxHistoricalTradeDataResponseDao.fromJson(responseJson);
     if (printJson) {
       print(url);
-      print(responseHistorical.toJson());
+      printPrettyJson(responseHistorical.toJson());
     }
 
     return responseHistorical.data;
@@ -184,21 +178,11 @@ class BxExchangeService {
   Future<BxBalanceResponseDao> fetchBalance({String twoFactorAuth = "", bool printJson = false}) async {
     validateGeneralApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_BALANCE)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_BALANCE).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyGeneral, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyGeneral.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth"
-        });
+    Response response = await http.post(url, headers: {"Content-Type": FORM_URL_ENCODED}, body: {"key": apiKeyGeneral.apiKey, "nonce": "$nonce", "signature": "$signature", "twofa": "$twoFactorAuth"});
 
     final responseJson = json.decode(response.body);
     BxBalanceResponseDao responseBalance = BxBalanceResponseDao.fromJson(responseJson);
@@ -206,7 +190,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseBalance;
@@ -217,27 +201,23 @@ class BxExchangeService {
   /// Returns current orders with option BUY / SELL.
   /// require permission [balance]
   ///
-  Future<BxOpenOrderResponseDao> fetchOpenOrders(
-      {int pairingId = 1, BxTradeType orderType = BxTradeType.BUY, String twoFactorAuth = "", bool printJson = false}) async {
+  Future<BxOpenOrderResponseDao> fetchOpenOrders({int pairingId = 1, BxTradeType orderType = BxTradeType.BUY, String twoFactorAuth = "", bool printJson = false}) async {
     validateGeneralApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_OPEN_ORDER)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_OPEN_ORDER).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyGeneral, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyGeneral.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth",
-          "pairing": "$pairingId",
-          "type": orderType == BxTradeType.BUY ? "buy" : "sell",
-        });
+    Response response = await http.post(url, headers: {
+      "Content-Type": FORM_URL_ENCODED
+    }, body: {
+      "key": apiKeyGeneral.apiKey,
+      "nonce": "$nonce",
+      "signature": "$signature",
+      "twofa": "$twoFactorAuth",
+      "pairing": "$pairingId",
+      "type": orderType == BxTradeType.BUY ? "buy" : "sell",
+    });
 
     final responseJson = json.decode(response.body);
     BxOpenOrderResponseDao responseGetOrder = BxOpenOrderResponseDao.fromJson(responseJson);
@@ -245,7 +225,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseGetOrder;
@@ -256,29 +236,26 @@ class BxExchangeService {
   /// Get your own balance affecting transaction history, such as trades, withdrawals and deposits.
   /// require permission [balance]
   ///
-  Future<BxTransactionHistoryDao> fetchTransactionHistory({String currency = "", String startDate = "", String endDate = "",
-    BxTransactionType transactionType = BxTransactionType.ALL, String twoFactorAuth = "", bool printJson = false}) async {
+  Future<BxTransactionHistoryDao> fetchTransactionHistory(
+      {String currency = "", String startDate = "", String endDate = "", BxTransactionType transactionType = BxTransactionType.ALL, String twoFactorAuth = "", bool printJson = false}) async {
     validateGeneralApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_TRANSACTIONS_HISTORY)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_TRANSACTIONS_HISTORY).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyGeneral, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyGeneral.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth",
-          "currency": "$currency",
-          "type": bxTransactionTypeToString(transactionType),
-          "start_date": startDate,
-          "end_date": endDate
-        });
+    Response response = await http.post(url, headers: {
+      "Content-Type": FORM_URL_ENCODED
+    }, body: {
+      "key": apiKeyGeneral.apiKey,
+      "nonce": "$nonce",
+      "signature": "$signature",
+      "twofa": "$twoFactorAuth",
+      "currency": "$currency",
+      "type": bxTransactionTypeToString(transactionType),
+      "start_date": startDate,
+      "end_date": endDate
+    });
 
     final responseJson = json.decode(response.body);
     BxTransactionHistoryDao responseHistory = BxTransactionHistoryDao.fromJson(responseJson);
@@ -286,7 +263,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseHistory;
@@ -300,21 +277,11 @@ class BxExchangeService {
   Future<BxWithdrawHistoryDao> fetchWithdrawHistory({String twoFactorAuth = "", bool printJson = false}) async {
     validateGeneralApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_WITHDRAW_HISTORY)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_WITHDRAW_HISTORY).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyGeneral, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyGeneral.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth"
-        });
+    Response response = await http.post(url, headers: {"Content-Type": FORM_URL_ENCODED}, body: {"key": apiKeyGeneral.apiKey, "nonce": "$nonce", "signature": "$signature", "twofa": "$twoFactorAuth"});
 
     final responseJson = json.decode(response.body);
     BxWithdrawHistoryDao responseWithdrawHistory = BxWithdrawHistoryDao.fromJson(responseJson);
@@ -322,7 +289,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseWithdrawHistory;
@@ -333,27 +300,23 @@ class BxExchangeService {
   /// Return deposit address of wallet.
   /// require permission [deposit]
   ///
-  Future<BxDepositAddressDao> fetchDepositAddress(
-      {@required String currency, bool generateNewAddress = false, String twoFactorAuth = "", bool printJson = false}) async {
+  Future<BxDepositAddressDao> fetchDepositAddress({@required String currency, bool generateNewAddress = false, String twoFactorAuth = "", bool printJson = false}) async {
     validateGeneralApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_GET_DEPOSIT_ADDRESS)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_GET_DEPOSIT_ADDRESS).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyGeneral, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyGeneral.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth",
-          "currency": "$currency",
-          "new": "$generateNewAddress",
-        });
+    Response response = await http.post(url, headers: {
+      "Content-Type": FORM_URL_ENCODED
+    }, body: {
+      "key": apiKeyGeneral.apiKey,
+      "nonce": "$nonce",
+      "signature": "$signature",
+      "twofa": "$twoFactorAuth",
+      "currency": "$currency",
+      "new": "$generateNewAddress",
+    });
 
     final responseJson = json.decode(response.body);
     BxDepositAddressDao responseDepositAddress = BxDepositAddressDao.fromJson(responseJson);
@@ -361,7 +324,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseDepositAddress;
@@ -373,29 +336,25 @@ class BxExchangeService {
   /// require permission [createOrder]
   ///
   Future<BxCreateOrderResponseDao> createOrder(
-      {@required int pairingId, @required BxTradeType tradeType, @required double amount, @required double rate,
-        String twoFactorAuth = "", bool printJson = false}) async {
+      {@required int pairingId, @required BxTradeType tradeType, @required double amount, @required double rate, String twoFactorAuth = "", bool printJson = false}) async {
     validateCreateOrderApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_CREATE_ORDER)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_CREATE_ORDER).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyCreateOrder, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyCreateOrder.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth",
-          "pairing": "$pairingId",
-          "type": fromBxTradeTypeToString(tradeType),
-          "amount": "$amount",
-          "rate": "$rate",
-        });
+    Response response = await http.post(url, headers: {
+      "Content-Type": FORM_URL_ENCODED
+    }, body: {
+      "key": apiKeyCreateOrder.apiKey,
+      "nonce": "$nonce",
+      "signature": "$signature",
+      "twofa": "$twoFactorAuth",
+      "pairing": "$pairingId",
+      "type": fromBxTradeTypeToString(tradeType),
+      "amount": "$amount",
+      "rate": "$rate",
+    });
 
     final responseJson = json.decode(response.body);
     BxCreateOrderResponseDao responseCreateOrder = BxCreateOrderResponseDao.fromJson(responseJson);
@@ -403,7 +362,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseCreateOrder;
@@ -414,28 +373,23 @@ class BxExchangeService {
   /// Cancel order / Remove order from market.
   /// require permission [cancelOrder]
   ///
-  Future<BxCancelOrderResponseDao> cancelOrder(
-      {@required int pairingId, @required int orderId,
-        String twoFactorAuth = "", bool printJson = false}) async {
+  Future<BxCancelOrderResponseDao> cancelOrder({@required int pairingId, @required int orderId, String twoFactorAuth = "", bool printJson = false}) async {
     validateCancelOrderApiKey();
 
-    String url = Uri
-        .https(BASE_URL, POINT_API + END_POINT_CANCEL_ORDER)
-        .toString();
+    String url = Uri.https(BASE_URL, POINT_API + END_POINT_CANCEL_ORDER).toString();
 
     int nonce = BxAuthUtils.getNonce();
     String signature = BxAuthUtils.generateSignature(apiKeyCancelOrder, nonce).toString();
-    Response response = await http.post(url,
-        headers: {
-          "Content-Type": FORM_URL_ENCODED},
-        body: {
-          "key": apiKeyCancelOrder.apiKey,
-          "nonce": "$nonce",
-          "signature": "$signature",
-          "twofa": "$twoFactorAuth",
-          "pairing": "$pairingId",
-          "order_id": "$orderId",
-        });
+    Response response = await http.post(url, headers: {
+      "Content-Type": FORM_URL_ENCODED
+    }, body: {
+      "key": apiKeyCancelOrder.apiKey,
+      "nonce": "$nonce",
+      "signature": "$signature",
+      "twofa": "$twoFactorAuth",
+      "pairing": "$pairingId",
+      "order_id": "$orderId",
+    });
 
     final responseJson = json.decode(response.body);
     BxCancelOrderResponseDao responseCancelOrder = BxCancelOrderResponseDao.fromJson(responseJson);
@@ -443,7 +397,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      print(responseJson);
+      printPrettyJson(responseJson.toJson());
     }
 
     return responseCancelOrder;
