@@ -15,10 +15,12 @@ Future main() async {
 
   // TODO : Please provide API Key.
   var bx = BxExchangeService(
-    apiKeyGeneral: BxApiKey(apiKey: "-", secret: "-"),
+    apiKeyGeneral: BxApiKey(apiKey: "123456789", secret: "123456789"),
     apiKeyCreateOrder: BxApiKey(apiKey: "-", secret: "-"),
     apiKeyCancelOrder: BxApiKey(apiKey: "-", secret: "-"),
   );
+
+  bx.printSignature();
 
   // Public API.
   await fetchMarketData(bx);
