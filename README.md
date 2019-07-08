@@ -207,8 +207,37 @@ Get your own balance affecting transaction history, such as trades, withdrawals 
 You can add conditions to display various history transactions.
 
 ```dart
-  var response = await bx.fetchTransactionHistory(currency: "BTC", transactionType: BxTransactionType.WITHDRAW, startDate: "2019-01-01", endDate: "2019-05-01");
+  var response = await bx.fetchTransactionHistory(
+                              currency: "BTC", 
+                              transactionType: BxTransactionType.WITHDRAW, 
+                              startDate: "2019-01-01", 
+                              endDate: "2019-05-01");
 ```
+
+
+### Get Transaction History
+
+Return all transactions that about withdrawal.
+
+```dart
+  var response  = await bx.fetchWithdrawHistory();
+  if(response.success){
+    for(var tx in response.withdrawals){
+      //  tx.transactionId;
+      //  tx.currency;
+      //  tx.amount;
+      //  tx.address;
+      //  tx.dateRequested;
+      //  tx.withdrawalId;
+      //  tx.withdrawalStatus;
+    }
+  }else{
+    //  print(response.error); 
+  }
+```
+
+
+
 
 
 

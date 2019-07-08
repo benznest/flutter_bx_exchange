@@ -82,21 +82,39 @@ Future main() async {
 //    print(response.error);
 //  }
 
-  var response = await bx.fetchTransactionHistory(currency: "BTC", transactionType: BxTransactionType.WITHDRAW, startDate: "2019-01-01", endDate: "2019-05-01");
-  if (response.success) {
-    for (var tx in response.transactions) {
+//  var response = await bx.fetchTransactionHistory(currency: "BTC", transactionType: BxTransactionType.WITHDRAW, startDate: "2019-01-01", endDate: "2019-05-01");
+//  if (response.success) {
+//    for (var tx in response.transactions) {
       //  tx.currency;
       //  tx.amount;
       //  tx.transactionId;
       //  tx.date;
       //  tx.type;
       //  tx.refId;
+//    }
+//  } else {
+//    print(response.error);
+//  }
+
+  var response  = await bx.fetchWithdrawHistory();
+  if(response.success){
+    for(var tx in response.withdrawals){
+      //  tx.transactionId;
+      //  tx.currency;
+      //  tx.amount;
+      //  tx.address;
+      //  tx.dateRequested;
+      //  tx.withdrawalId;
+      //  tx.withdrawalStatus;
     }
-  } else {
-    print(response.error);
+  }else{
+    //  print(response.error);
   }
 
-//  BxWithdrawHistoryDao withdrawHistory = await service.fetchWithdrawHistory(printJson: true);
+
+
+
+
 //  BxDepositAddressDao depositAddress = await service.fetchDepositAddress(currency: "BTC", printJson: true);
 //  await service.createOrder(pairingId: 1,
 //      tradeType: BxTradeType.SELL,
