@@ -139,6 +139,28 @@ var bx = BxExchangeService(
 ```
 
 
+### Balance
+
+Return all currencies with balance information including available, withdrawals, deposit, open order.
+
+```dart
+  var response = await bx.fetchBalance();
+  if(response.success){
+    var balances = response.balance;
+    for(var balance in balances.listBalanceCurrency){
+      //  balance.currency;
+      //  balance.available;
+      //  balance.deposits;
+      //  balance.orders;
+      //  balance.total;
+      //  balance.withdrawals;
+    }
+  }else{
+    print(response.error);
+  }
+```
+
+
 
 
 

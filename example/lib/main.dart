@@ -58,7 +58,22 @@ Future main() async {
 
 
 
-//  await service.fetchBalance(printJson: true);
+  var response = await bx.fetchBalance();
+  if(response.success){
+    var balances = response.balance;
+    for(var balance in balances.listBalanceCurrency){
+      //  balance.currency;
+      //  balance.available;
+      //  balance.deposits;
+      //  balance.orders;
+      //  balance.total;
+      //  balance.withdrawals;
+    }
+  }else{
+    print(response.error);
+  }
+
+
 //  BxOpenOrderResponseDao orders = await service.fetchOpenOrders(pairingId: 1, type: BxTradeType.SELL, printJson: true);
 //  await service.fetchTransactionHistory(startDate: "2019-10-10", printJson: true);
 //  BxWithdrawHistoryDao withdrawHistory = await service.fetchWithdrawHistory(printJson: true);
