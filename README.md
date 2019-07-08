@@ -57,3 +57,27 @@ for(var currency in list){
     //    currency.primaryMin;
   }
 ```
+
+### Order Book Summary
+
+Returns a list of all buy and sell orders in the order book for the selected pairing market.
+
+```dart
+  var orderbook = await bx.fetchOrderBook(pairingId: 1); // 1 is BTC/THB
+//  orderbook.pairingsId;
+//  orderbook.asks;
+//  orderbook.bids;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

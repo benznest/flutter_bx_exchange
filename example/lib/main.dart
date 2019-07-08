@@ -26,18 +26,24 @@ Future main() async {
 //  }
 
 
-  List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings(printJson: true);
-    for(var currency in list){
+//  List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings(printJson: true);
+//    for(var currency in list){
 //    currency.pairingId;
 //    currency.primaryCurrency;
 //    currency.secondaryCurrency;
 //    currency.active;
 //    currency.primaryMin;
-  }
+//  }
 
 
 
-//  await service.fetchOrderBook(pairingId: 1, printJson: true);
+  var orderbook = await bx.fetchOrderBook(pairingId: 1);
+//  orderbook.pairingsId;
+//  orderbook.asks;
+//  orderbook.bids;
+
+
+
 //  await service.fetchRecentTrade(pairingId: 1, printJson: true);
 //  await service.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
 //  await service.fetchBalance(printJson: true);
