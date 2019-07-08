@@ -101,6 +101,15 @@ var orderbook = await bx.fetchOrderBook(pairingId: 1); // 1 is BTC/THB
 
 Returns a list of 10 most recent trades, and top 10 asks and bids in order book.
 
+This is a public API. you can access JSON in [https://bx.in.th/api/trade/?pairing=1](https://bx.in.th/api/trade/?pairing=1) directly.
+
+```
+[GET]
+https://bx.in.th/api/trade/?pairing={pairing_id}
+```
+
+Using in Flutter.
+
 ```dart
 var recent = await bx.fetchRecentTrade(pairingId: 1); // 1 is BTC/THB
 //  recent.pairingId;
@@ -112,6 +121,13 @@ var recent = await bx.fetchRecentTrade(pairingId: 1); // 1 is BTC/THB
 ### Historical Trade Data  
 
 Returns Weighted Average, Volume, Open, Close, Low and High prices for the specified date.
+
+This is a public API. you can access JSON in [https://bx.in.th/api/tradehistory/?pairing=1&date=2019-01-01](https://bx.in.th/api/tradehistory/?pairing=1&date=2019-01-01) directly.
+
+```
+[GET]
+https://bx.in.th/api/tradehistory/?pairing={pairing_id}&date={date}
+```
 
 ```dart
 var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01");
