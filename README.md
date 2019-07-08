@@ -47,6 +47,15 @@ for(var currency in list){
 
 Returns a list of all available currency pairings, including their "pairing_id" which is required for some API calls. Will also include the minimum order amount for primary and secondary currency in each pairing market.
 
+This is public API. you can access JSON with URL directly.
+
+```
+[GET]
+[https://bx.in.th/api/pairing/](https://bx.in.th/api/pairing/)
+```
+
+Using in Flutter.
+
 ```dart
 List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings();
 for(var currency in list){
@@ -257,7 +266,7 @@ Generate new deposit address.
 
 ### Create Order
 
-Create order to market require Create Order permission.
+Create order to market require CREATE ORDER permission.
 This method use Create Order API key.
 The parameter require pairing id, tradeType, amount, rate.
 2FA is a optional.
@@ -279,7 +288,7 @@ The parameter require pairing id, tradeType, amount, rate.
 
 ### Cancel Order
 
-Cancel order to market require Cancel Order permission.
+Cancel order to market require CANCEL ORDER permission.
 This method use Cancel Order API key.
 The parameter require pairing id and order id.
 2FA is a optional.
