@@ -31,15 +31,15 @@ var bx = BxExchangeService();
 Returns a list of all currency pairings including symbol currency, current price, volume in 24 hr, change in 24 hr.
 
 ```dart
-  List<BxPairCurrencyBxDao> list = await bx.fetchMarketData();
-  for(var currency in list){
+List<BxPairCurrencyBxDao> list = await bx.fetchMarketData();
+for(var currency in list){
     //    currency.pairingId;
     //    currency.primaryCurrency;
     //    currency.secondaryCurrency;
     //    currency.lastPrice;
     //    currency.volume24hours;
     //    currency.orderbook;
-  }
+}
 ```
 
 
@@ -48,7 +48,7 @@ Returns a list of all currency pairings including symbol currency, current price
 Returns a list of all available currency pairings, including their "pairing_id" which is required for some API calls. Will also include the minimum order amount for primary and secondary currency in each pairing market.
 
 ```dart
-  List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings();
+List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings();
 for(var currency in list){
     //    currency.pairingId;
     //    currency.primaryCurrency;
@@ -63,10 +63,23 @@ for(var currency in list){
 Returns a list of all buy and sell orders in the order book for the selected pairing market.
 
 ```dart
-  var orderbook = await bx.fetchOrderBook(pairingId: 1); // 1 is BTC/THB
+var orderbook = await bx.fetchOrderBook(pairingId: 1); // 1 is BTC/THB
 //  orderbook.pairingsId;
 //  orderbook.asks;
 //  orderbook.bids;
+```
+
+
+### Recent Trade  
+
+Returns a list of 10 most recent trades, and top 10 asks and bids in order book.
+
+```dart
+var recent = await bx.fetchRecentTrade(pairingId: 1);
+//  recent.pairingId;
+//  recent.highBid;
+//  recent.lowAsk;
+//  recent.trades;
 ```
 
 
