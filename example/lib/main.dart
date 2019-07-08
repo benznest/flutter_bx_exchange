@@ -85,43 +85,47 @@ Future main() async {
 //  var response = await bx.fetchTransactionHistory(currency: "BTC", transactionType: BxTransactionType.WITHDRAW, startDate: "2019-01-01", endDate: "2019-05-01");
 //  if (response.success) {
 //    for (var tx in response.transactions) {
-      //  tx.currency;
-      //  tx.amount;
-      //  tx.transactionId;
-      //  tx.date;
-      //  tx.type;
-      //  tx.refId;
+  //  tx.currency;
+  //  tx.amount;
+  //  tx.transactionId;
+  //  tx.date;
+  //  tx.type;
+  //  tx.refId;
 //    }
 //  } else {
 //    print(response.error);
 //  }
 
-  var response  = await bx.fetchWithdrawHistory();
-  if(response.success){
-    for(var tx in response.withdrawals){
-      //  tx.transactionId;
-      //  tx.currency;
-      //  tx.amount;
-      //  tx.address;
-      //  tx.dateRequested;
-      //  tx.withdrawalId;
-      //  tx.withdrawalStatus;
-    }
-  }else{
-    //  print(response.error);
-  }
+//  var response  = await bx.fetchWithdrawHistory();
+//  if(response.success){
+//    for(var tx in response.withdrawals){
+  //  tx.transactionId;
+  //  tx.currency;
+  //  tx.amount;
+  //  tx.address;
+  //  tx.dateRequested;
+  //  tx.withdrawalId;
+  //  tx.withdrawalStatus;
+//    }
+//  }else{
+  //  print(response.error);
+//  }
 
+//  var response = await bx.fetchDepositAddress(currency: "BTC",generateNewAddress: true);
+//  if(response.success){
+//    // response.address;
+//  }else{
+//    print(response.error);
+//  }
 
+//  var response = await bx.createOrder(pairingId: 1, tradeType: BxTradeType.SELL, amount: 0.001, rate: 1000000, twoFactorAuth: '150812');
+//  if (response.success) {
+//     // response.orderId;
+//     // response.historyId;
+//  } else {
+//    print(response.error);
+//  }
 
-
-
-//  BxDepositAddressDao depositAddress = await service.fetchDepositAddress(currency: "BTC", printJson: true);
-//  await service.createOrder(pairingId: 1,
-//      tradeType: BxTradeType.SELL,
-//      amount: 0.001,
-//      rate: 1000000,
-//      twoFactorAuth: '150812',
-//      printJson: true);
 //  await bx.cancelOrder(pairingId: 1,
 //      orderId: 12859851,
 //      twoFactorAuth: '570265',

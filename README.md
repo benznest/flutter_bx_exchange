@@ -236,11 +236,65 @@ Return all transactions that about withdrawal.
   }
 ```
 
+### Get Deposit Address
 
+Return deposit address of wallet.
 
+```dart
+  var response = await bx.fetchDepositAddress(currency: "BTC");
+  if(response.success){
+    // response.address;
+  }else{
+    print(response.error);
+  }
+```
 
+Generate new deposit address.
 
+```dart
+  var response = await bx.fetchDepositAddress(currency: "BTC",generateNewAddress: true);
+```
 
+### Create Order
+
+Create order to market require Create Order permission.
+This method use Create Order API key.
+The parameter require pairing id, tradeType, amount, rate.
+2FA is a optional.
+
+```dart
+  var response = await bx.createOrder(
+                          pairingId: 1, 
+                          tradeType: BxTradeType.SELL, 
+                          amount: 0.001, 
+                          rate: 1000000, 
+                          twoFactorAuth: '123456');
+  if (response.success) {
+     // response.orderId;
+     // response.historyId;
+  } else {
+    print(response.error);
+  }
+```
+
+### Cancel Order
+
+Cancel order to market require Cancel Order permission.
+This method use Cancel Order API key.
+The parameter require pairing id and order id.
+2FA is a optional.
+
+```dart
+  var response = await bx.cancelOrder(
+                        pairingId: 1,
+                        orderId: 4567890,
+                        twoFactorAuth: '123456');
+  if (response.success) {
+    //
+  } else {
+    print(response.error);
+  }
+```
 
 
 
