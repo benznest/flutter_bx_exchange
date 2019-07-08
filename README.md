@@ -17,6 +17,8 @@ Import the package to your project.
 import 'package:flutter_bx_exchange/bx_exchange_service.dart';
 ```
 
+### Using Public API
+
 Create instance without API Key. 
 
 ```dart
