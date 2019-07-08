@@ -1,6 +1,6 @@
 # Flutter BX Exchange 
 
-Flutter BX Exchange is a Flutter's library for calling API of the bx.in.th.
+Flutter BX Exchange is a Flutter's library for calling API of the [https://bx.in.th.](https://bx.in.th/)
 
 ## Installation
 Add dependencies in pubspec.yaml

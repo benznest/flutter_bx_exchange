@@ -26,7 +26,7 @@ Future main() async {
 //  await fetchCurrentPairing(bx);
 //  await fetchOrderBook(bx);
 //  await fetchRecentTrade(bx);
-  await fetchHistoricalTradeData(bx);
+//  await fetchHistoricalTradeData(bx);
 //
 //  // Private API.
 //  await fetchBalance(bx);
@@ -135,7 +135,7 @@ Future<BxBalanceResponseDao> fetchBalance(BxExchangeService bx) async {
 }
 
 Future fetchHistoricalTradeData(BxExchangeService bx) async {
-  var history = await bx.fetchHistoricalTradeData(pairingId: BxPairCurrency.THB_BTC);
+  var history = await bx.fetchHistoricalTradeData(pairingId: BxPairCurrency.THB_BTC, date: "2019-07-01");
 //  history.high;
 //  history.low;
 //  history.avg;
