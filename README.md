@@ -31,12 +31,27 @@ Returns a list of all currency pairings including symbol currency, current price
 ```dart
   List<BxPairCurrencyBxDao> list = await bx.fetchMarketData();
   for(var currency in list){
-//    currency.pairingId;
-//    currency.primaryCurrency;
-//    currency.secondaryCurrency;
-//    currency.lastPrice;
-//    currency.volume24hours;
-//    currency.orderbook;
+    //    currency.pairingId;
+    //    currency.primaryCurrency;
+    //    currency.secondaryCurrency;
+    //    currency.lastPrice;
+    //    currency.volume24hours;
+    //    currency.orderbook;
   }
 ```
 
+
+### Current Pairing Currency
+
+Returns a list of all available currency pairings, including their "pairing_id" which is required for some API calls. Will also include the minimum order amount for primary and secondary currency in each pairing market.
+
+```dart
+  List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings();
+for(var currency in list){
+    //    currency.pairingId;
+    //    currency.primaryCurrency;
+    //    currency.secondaryCurrency;
+    //    currency.active;
+    //    currency.primaryMin;
+  }
+```

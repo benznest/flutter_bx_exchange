@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bx_exchange/bx_exchange_service.dart';
 import 'package:flutter_bx_exchange/bx_trade_type.dart';
 import 'package:flutter_bx_exchange/dao/apiKey/bx_api_key.dart';
+import 'package:flutter_bx_exchange/dao/current_pairings/bx_pair_curency_meta_dao.dart';
 import 'package:flutter_bx_exchange/dao/get_deposit_address/bx_deposit_address_dao.dart';
 import 'package:flutter_bx_exchange/dao/get_order/bx_open_order_response_dao.dart';
 import 'package:flutter_bx_exchange/dao/market_data/bx_pair_currency_dao.dart';
@@ -14,19 +15,28 @@ Future main() async {
     apiKeyCancelOrder: BxApiKey(apiKey: "ac10eb8b24d0", secret: "79ec3bdc1648"),
   );
 
-  List<BxPairCurrencyBxDao> list = await bx.fetchMarketData(printJson: true);
-  for(var currency in list){
+//  List<BxPairCurrencyBxDao> list = await bx.fetchMarketData(printJson: true);
+//  for(var currency in list){
 //    currency.pairingId;
 //    currency.primaryCurrency;
 //    currency.secondaryCurrency;
 //    currency.lastPrice;
 //    currency.volume24hours;
 //    currency.orderbook;
+//  }
+
+
+  List<BxPairCurrencyMetaDao> list = await bx.fetchCurrentPairings(printJson: true);
+    for(var currency in list){
+//    currency.pairingId;
+//    currency.primaryCurrency;
+//    currency.secondaryCurrency;
+//    currency.active;
+//    currency.primaryMin;
   }
 
 
 
-//  await service.fetchCurrentPairings(printJson: true);
 //  await service.fetchOrderBook(pairingId: 1, printJson: true);
 //  await service.fetchRecentTrade(pairingId: 1, printJson: true);
 //  await service.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
