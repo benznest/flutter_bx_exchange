@@ -30,6 +30,15 @@ var bx = BxExchangeService();
 
 Returns a list of all currency pairings including symbol currency, current price, volume in 24 hr, change in 24 hr.
 
+This is a public API. you can access JSON in [https://bx.in.th/api/](https://bx.in.th/api/) directly.
+
+```
+[GET]
+https://bx.in.th/api/
+```
+
+Using in Flutter.
+
 ```dart
 List<BxPairCurrencyBxDao> list = await bx.fetchMarketData();
 for(var currency in list){
@@ -47,7 +56,7 @@ for(var currency in list){
 
 Returns a list of all available currency pairings, including their "pairing_id" which is required for some API calls. Will also include the minimum order amount for primary and secondary currency in each pairing market.
 
-This is public API. you can access JSON in [https://bx.in.th/api/pairing/](https://bx.in.th/api/pairing/) directly.
+This is a public API. you can access JSON in [https://bx.in.th/api/pairing/](https://bx.in.th/api/pairing/) directly.
 
 ```
 [GET]
@@ -70,6 +79,15 @@ for(var currency in list){
 ### Order Book Summary
 
 Returns a list of all buy and sell orders in the order book for the selected pairing market.
+
+This is a public API. you can access JSON in [https://bx.in.th/api/orderbook/?pairing=1](https://bx.in.th/api/orderbook/?pairing=1) directly.
+
+```
+[GET]
+https://bx.in.th/api/orderbook/?pairing={pairing_id}
+```
+
+Using in Flutter.
 
 ```dart
 var orderbook = await bx.fetchOrderBook(pairingId: 1); // 1 is BTC/THB
