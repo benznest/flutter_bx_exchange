@@ -47,11 +47,11 @@ for(var currency in list){
 
 Returns a list of all available currency pairings, including their "pairing_id" which is required for some API calls. Will also include the minimum order amount for primary and secondary currency in each pairing market.
 
-This is public API. you can access JSON with URL directly.
+This is public API. you can access JSON in [https://bx.in.th/api/pairing/](https://bx.in.th/api/pairing/) directly.
 
 ```
 [GET]
-[https://bx.in.th/api/pairing/](https://bx.in.th/api/pairing/)
+https://bx.in.th/api/pairing/
 ```
 
 Using in Flutter.
