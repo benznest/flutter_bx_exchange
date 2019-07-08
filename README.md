@@ -1,6 +1,6 @@
 # Flutter BX Exchange 
 
-Flutter BX Exchange is a library to call API of the bx.in.th.
+Flutter BX Exchange is a Flutter's library for calling API of the bx.in.th.
 
 ## Installation
 Add dependencies in pubspec.yaml
@@ -80,6 +80,19 @@ var recent = await bx.fetchRecentTrade(pairingId: 1);
 //  recent.highBid;
 //  recent.lowAsk;
 //  recent.trades;
+```
+
+### Historical Trade Data  
+
+Returns Weighted Average, Volume, Open, Close, Low and High prices for the specified date.
+
+```dart
+var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01");
+//  history.high;
+//  history.low;
+//  history.avg;
+//  history.open;
+//  history.volume;
 ```
 
 

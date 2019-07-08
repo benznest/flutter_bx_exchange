@@ -36,21 +36,28 @@ Future main() async {
 //  }
 
 
-
 //  var orderbook = await bx.fetchOrderBook(pairingId: 1);
 //  orderbook.pairingsId;
 //  orderbook.asks;
 //  orderbook.bids;
 
 
-  var recent = await bx.fetchRecentTrade(pairingId: 1);
+//  var recent = await bx.fetchRecentTrade(pairingId: 1);
 //  recent.pairingId;
 //  recent.highBid;
 //  recent.lowAsk;
 //  recent.trades;
 
 
-//  await service.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
+  var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
+  history.high;
+  history.low;
+  history.avg;
+  history.open;
+  history.volume;
+
+
+
 //  await service.fetchBalance(printJson: true);
 //  BxOpenOrderResponseDao orders = await service.fetchOpenOrders(pairingId: 1, type: BxTradeType.SELL, printJson: true);
 //  await service.fetchTransactionHistory(startDate: "2019-10-10", printJson: true);
