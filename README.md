@@ -1,14 +1,25 @@
-# flutter_bx_exchange
+# Flutter BX Exchange 
 
-A new Flutter plugin.
+Flutter BX Exchange is a library to call API of the bx.in.th.
 
-## Getting Started
+## Installation
+Add dependencies in pubspec.yaml
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+```bash
+flutter_bx_exchange: 1.0.0
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+Import the package to your project.
+
+```dart
+import 'package:flutter_bx_exchange/bx_exchange_service.dart';
+```
+
+Create BxExchangeService instance without API Key.
+
+```dart
+var bx = BxExchangeService();
+```
+

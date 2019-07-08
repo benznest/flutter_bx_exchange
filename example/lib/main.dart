@@ -7,13 +7,13 @@ import 'package:flutter_bx_exchange/dao/get_order/bx_open_order_response_dao.dar
 import 'package:flutter_bx_exchange/dao/withdraw_history/bx_withdraw_history_dao.dart';
 
 Future main() async {
-  BxExchangeService bx = BxExchangeService(
+  var bx = BxExchangeService(
     apiKeyGeneral: BxApiKey(apiKey: "893fc899cfdc", secret: "0f3c0c0e8687"),
     apiKeyCreateOrder: BxApiKey(apiKey: "ac10eb8b24d0", secret: "79ec3bdc1648"),
     apiKeyCancelOrder: BxApiKey(apiKey: "ac10eb8b24d0", secret: "79ec3bdc1648"),
   );
 
-//  await service.fetchMarketData(printJson: true);
+  await bx.fetchMarketData(printJson: true);
 //  await service.fetchCurrentPairings(printJson: true);
 //  await service.fetchOrderBook(pairingId: 1, printJson: true);
 //  await service.fetchRecentTrade(pairingId: 1, printJson: true);
