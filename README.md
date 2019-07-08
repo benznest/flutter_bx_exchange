@@ -215,7 +215,7 @@ You can add conditions to display various history transactions.
 ```
 
 
-### Get Transaction History
+### Get Withdraw History
 
 Return all transactions that about withdrawal.
 
