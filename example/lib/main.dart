@@ -49,12 +49,12 @@ Future main() async {
 //  recent.trades;
 
 
-  var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
-  history.high;
-  history.low;
-  history.avg;
-  history.open;
-  history.volume;
+//  var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01", printJson: true);
+//  history.high;
+//  history.low;
+//  history.avg;
+//  history.open;
+//  history.volume;
 
 
 

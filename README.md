@@ -17,7 +17,7 @@ Import the package to your project.
 import 'package:flutter_bx_exchange/bx_exchange_service.dart';
 ```
 
-### Using Public API
+## Using Public API
 
 Create instance without API Key. 
 
@@ -75,7 +75,7 @@ var orderbook = await bx.fetchOrderBook(pairingId: 1); // 1 is BTC/THB
 Returns a list of 10 most recent trades, and top 10 asks and bids in order book.
 
 ```dart
-var recent = await bx.fetchRecentTrade(pairingId: 1);
+var recent = await bx.fetchRecentTrade(pairingId: 1); // 1 is BTC/THB
 //  recent.pairingId;
 //  recent.highBid;
 //  recent.lowAsk;
@@ -97,6 +97,27 @@ var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01"
 
 
 
+## Using Private API
+
+Create instance with 3 API keys With different permissions.
+
+
+General API ke are used for reading general information, such as balance, open orders , deposit address. 
+required [balance permission] and [deposit permission].
+
+Crate Order API ke are used for creating order, such as balance, open orders , deposit address.
+required [create order permission].
+
+Cancel Order API ke are used for canceling order information, such as balance, open orders , deposit address.
+required [cancel order permission].
+
+```dart
+var bx = BxExchangeService(
+  apiKeyGeneral:     BxApiKey(apiKey: "........", secret: "........"),
+  apiKeyCreateOrder: BxApiKey(apiKey: "........", secret: "........"),
+  apiKeyCancelOrder: BxApiKey(apiKey: "........", secret: "........"),
+);
+```
 
 
 
