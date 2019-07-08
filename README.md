@@ -126,7 +126,7 @@ Cancel Order API key are used for canceling order information, such as balance, 
 required permissions : cancel order. (Recommended to enable 2FA for safety.)
 ```
 
-### Using Private API
+## Using Private API
 
 Create instance with 3 API keys different permissions.
 
