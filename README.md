@@ -17,9 +17,26 @@ Import the package to your project.
 import 'package:flutter_bx_exchange/bx_exchange_service.dart';
 ```
 
-Create BxExchangeService instance without API Key.
+Create instance without API Key. 
 
 ```dart
 var bx = BxExchangeService();
+```
+
+
+### Market Data (Ticker)
+
+Returns a list of all currency pairings including symbol currency, current price, volume in 24 hr, change in 24 hr.
+
+```dart
+  List<BxPairCurrencyBxDao> list = await bx.fetchMarketData();
+  for(var currency in list){
+//    currency.pairingId;
+//    currency.primaryCurrency;
+//    currency.secondaryCurrency;
+//    currency.lastPrice;
+//    currency.volume24hours;
+//    currency.orderbook;
+  }
 ```
 
