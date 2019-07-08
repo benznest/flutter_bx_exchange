@@ -97,19 +97,38 @@ var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01"
 
 
 
-## Using Private API
+## Prepare Private API
 
-Create instance with 3 API keys With different permissions.
+Prepare 3 API keys With different permissions.
+
+### General API key 
+
+General API key are used for reading general information, such as balance, open orders , deposit address. 
+
+```
+required permissions : balance and deposit. 
+```
+
+### Crate Order API key
+
+Crate Order API key are used for creating order, such as balance, open orders , deposit address.
+
+```
+required permissions : create order. (Recommended to enable 2FA for safety.)
+```
 
 
-General API ke are used for reading general information, such as balance, open orders , deposit address. 
-required [balance permission] and [deposit permission].
+### Cancel Order API key
 
-Crate Order API ke are used for creating order, such as balance, open orders , deposit address.
-required [create order permission].
+Cancel Order API key are used for canceling order information, such as balance, open orders , deposit address.
 
-Cancel Order API ke are used for canceling order information, such as balance, open orders , deposit address.
-required [cancel order permission].
+```
+required permissions : cancel order. (Recommended to enable 2FA for safety.)
+```
+
+### Using Private API
+
+Create instance with 3 API keys different permissions.
 
 ```dart
 var bx = BxExchangeService(
