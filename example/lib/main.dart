@@ -4,12 +4,12 @@ import 'package:flutter_bx_exchange/bx_trade_type.dart';
 import 'package:flutter_bx_exchange/bx_transaction_type.dart';
 import 'package:flutter_bx_exchange/dao/apiKey/bx_api_key.dart';
 import 'package:flutter_bx_exchange/dao/balance/bx_balance_response_dao.dart';
-import 'package:flutter_bx_exchange/dao/current_pairings/bx_pair_curency_meta_dao.dart';
 import 'package:flutter_bx_exchange/dao/get_deposit_address/bx_deposit_address_dao.dart';
 import 'package:flutter_bx_exchange/dao/get_order/bx_open_order_response_dao.dart';
 import 'package:flutter_bx_exchange/dao/market_data/bx_pair_currency_dao.dart';
 import 'package:flutter_bx_exchange/dao/transaction_history/bx_transaction_history_dao.dart';
 import 'package:flutter_bx_exchange/dao/withdraw_history/bx_withdraw_history_dao.dart';
+import 'package:flutter_bx_exchange/bx_pair_currency.dart';
 
 Future main() async {
   // TODO : Please provide API Key.
@@ -26,7 +26,7 @@ Future main() async {
 //  await fetchCurrentPairing(bx);
 //  await fetchOrderBook(bx);
 //  await fetchRecentTrade(bx);
-//  await fetchHistoricalTradeData(bx);
+  await fetchHistoricalTradeData(bx);
 //
 //  // Private API.
 //  await fetchBalance(bx);
@@ -135,7 +135,7 @@ Future<BxBalanceResponseDao> fetchBalance(BxExchangeService bx) async {
 }
 
 Future fetchHistoricalTradeData(BxExchangeService bx) async {
-  var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01");
+  var history = await bx.fetchHistoricalTradeData(pairingId: BxPairCurrency.THB_BTC);
 //  history.high;
 //  history.low;
 //  history.avg;

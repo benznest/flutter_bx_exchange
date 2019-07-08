@@ -1,0 +1,33 @@
+class BxPairCurrency {
+  static const int THB_BTC = 1;
+  static const int BTC_LTC = 2;
+  static const int BTC_NMC = 3;
+  static const int BTC_DOG = 4;
+  static const int BTC_PPC = 5;
+  static const int BTC_FTC = 6;
+  static const int BTC_XPM = 7;
+  static const int BTC_ZEC = 8;
+  static const int BTC_ZET = 9;
+  static const int BTC_CPT = 11;
+  static const int BTC_HYP = 13;
+  static const int BTC_PND = 14;
+  static const int BTC_XCN = 15;
+  static const int BTC_XPY = 17;
+  static const int BTC_LEO = 18;
+  static const int BTC_ETH = 20;
+  static const int THB_ETH = 21;
+  static const int THB_DAS = 22;
+  static const int THB_REP = 23;
+  static const int THB_GNO = 24;
+  static const int THB_XRP = 25;
+  static const int THB_OMG = 26;
+  static const int THB_BCH = 27;
+  static const int THB_EVX = 28;
+  static const int THB_XZC = 29;
+  static const int THB_LTC = 30;
+  static const int THB_POW = 31;
+  static const int THB_ZMN = 32;
+  static const int THB_EOS = 33;
+  static const int THB_BSV = 34;
+  static const int THB_GUSD = 35;
+}

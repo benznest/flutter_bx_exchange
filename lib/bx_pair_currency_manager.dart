@@ -1,7 +1,9 @@
 
+
+
 class BxPairCurrencyManager {
 
-  static List<String> LIST_CURRENCY_AVAILABLE = [
+  static const List<String> LIST_CURRENCY_AVAILABLE = [
     'THB',
     'BTC',
     'ETH',
@@ -32,7 +34,7 @@ class BxPairCurrencyManager {
   ];
 
 
-  static List LIST_PAIR_CURRENCY_ID = List.generate(50, (i) {
+  static  List LIST_PAIR_CURRENCY_ID = List.generate(50, (i) {
     return i + 1;
   });
 }

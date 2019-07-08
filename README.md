@@ -343,6 +343,16 @@ The parameter require pairing id and order id.
 
 Suggestions for other uses
 
+### Pairing Currency ID
+
+You can use BxPairCurrency class instead integer.
+
+Example
+
+```dart
+var history = await bx.fetchHistoricalTradeData(pairingId: BxPairCurrency.THB_BTC);
+```
+
 ### Print JSON
 
 display JSON response on console or logcat.
@@ -353,7 +363,7 @@ await bx.fetchMarketData(printJson: true);
 
 ![screenshot](screenshot/bx1.png)
 
-### Print Signature
+### Create Signature
 
 Create a signature and display it on the console so you can apply this signature to other tools such as Postman.
 and This signature will not be actually delivered to the server.
@@ -373,6 +383,7 @@ I/flutter ( 1919): apiKey = 123456789
 I/flutter ( 1919): nonce = 1562569793537
 I/flutter ( 1919): signature = 1ddf4d56df9a34abd83530d96d6df450fd3d2e2f0c910b55a79fbacce1e3e4ca
 ```
+
 
 
 
