@@ -144,7 +144,7 @@ var history = await bx.fetchHistoricalTradeData(pairingId: 1, date: "2019-07-01"
 
 Prepare 3 API keys With different permissions.
 
-### General API key 
+### 1. General API key 
 
 General API key are used for reading general information, such as balance, open orders , deposit address. 
 
@@ -152,7 +152,7 @@ General API key are used for reading general information, such as balance, open 
 required permissions : balance and deposit. 
 ```
 
-### Crate Order API key
+### 2. Crate Order API key
 
 Crate Order API key are used for creating order, such as balance, open orders , deposit address.
 
@@ -161,7 +161,7 @@ required permissions : create order. (Recommended to enable 2FA for safety.)
 ```
 
 
-### Cancel Order API key
+### 3. Cancel Order API key
 
 Cancel Order API key are used for canceling order information, such as balance, open orders , deposit address.
 
@@ -339,7 +339,19 @@ The parameter require pairing id and order id.
   }
 ```
 
+## Other uses
 
+Suggestions for other uses
+
+### print JSON
+
+display JSON response on console or logcat.
+
+```dart
+await bx.fetchMarketData(printJson: true);
+```
+
+![screenshot](screenshot/bx1.png)
 
 
 
