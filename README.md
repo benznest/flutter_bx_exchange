@@ -359,7 +359,11 @@ Create a signature and display it on the console so you can apply this signature
 and This signature will not be actually delivered to the server.
 
 ```dart
-bx.printSignature();
+bx.printSignature(
+              BxApiKey(
+                apiKey: "123456789", 
+                secret: "123456789"
+              ));
 ```
 
 Example displaying signature on console.

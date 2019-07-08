@@ -77,10 +77,10 @@ class BxExchangeService {
   ///
   /// print nonce and signature for testing.
   ///
-  void printSignature() {
+  void printSignature(BxApiKey key) {
     int nonce = BxAuthUtils.getNonce();
-    String signature = BxAuthUtils.generateSignature(apiKeyGeneral, nonce).toString();
-    print("apiKey = ${apiKeyGeneral.apiKey}");
+    String signature = BxAuthUtils.generateSignature(key, nonce).toString();
+    print("apiKey = ${key.apiKey}");
     print("nonce = $nonce");
     print("signature = " + signature);
   }

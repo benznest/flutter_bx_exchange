@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4252301e-75b3-40af-8828-708fbd73a59b" name="Default" comment="reademe">
-      <change afterPath="$PROJECT_DIR$/screenshot/bx1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
     </list>
@@ -55,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="338" column="3" lean-forward="true" selection-start-line="338" selection-start-column="3" selection-end-line="338" selection-end-column="3" />
+            <state relative-caret-position="635">
+              <caret line="364" selection-start-line="364" selection-end-line="364" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="77" />
+            <state relative-caret-position="578">
+              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -225,19 +222,19 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\create_order" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_deposit_address" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\withdraw_history" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\balance" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\cancel_order" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\create_order" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_deposit_address" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_order" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\balance" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\flutter project\flutter_bx_exchange\screenshot" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\create_order" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_deposit_address" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\withdraw_history" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -623,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562568437020</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="reademe">
+      <created>1562569711907</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562569711907</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -631,7 +635,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Resources Explorer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13314785" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13314785" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -642,7 +646,7 @@
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30007794" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30007794" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1032,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="77" />
+        <state relative-caret-position="578">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1042,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="338" column="3" lean-forward="true" selection-start-line="338" selection-start-column="3" selection-end-line="338" selection-end-column="3" />
+        <state relative-caret-position="635">
+          <caret line="364" selection-start-line="364" selection-end-line="364" selection-end-column="40" />
         </state>
       </provider>
     </entry>

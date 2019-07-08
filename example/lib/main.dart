@@ -12,7 +12,6 @@ import 'package:flutter_bx_exchange/dao/transaction_history/bx_transaction_histo
 import 'package:flutter_bx_exchange/dao/withdraw_history/bx_withdraw_history_dao.dart';
 
 Future main() async {
-
   // TODO : Please provide API Key.
   var bx = BxExchangeService(
     apiKeyGeneral: BxApiKey(apiKey: "123456789", secret: "123456789"),
@@ -20,7 +19,7 @@ Future main() async {
     apiKeyCancelOrder: BxApiKey(apiKey: "-", secret: "-"),
   );
 
-  bx.printSignature();
+  bx.printSignature(BxApiKey(apiKey: "123456789", secret: "123456789"));
 
   // Public API.
   await fetchMarketData(bx);
