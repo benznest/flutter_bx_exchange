@@ -34,7 +34,7 @@ class BxPairCurrencyManager {
   ];
 
 
-  static  List LIST_PAIR_CURRENCY_ID = List.generate(50, (i) {
+  static  List listPairCurrencyId = List.generate(50, (i) {
     return i + 1;
   });
 }

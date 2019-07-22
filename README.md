@@ -1,6 +1,7 @@
 # Flutter BX Exchange 
 
 Flutter BX Exchange is a Flutter's library for calling API of the [https://bx.in.th.](https://bx.in.th/)
+package on [Pub.dev](https://pub.dev/packages/flutter_bx_exchange)
 
 ## Installation
 Add dependencies in pubspec.yaml
@@ -154,7 +155,7 @@ required permissions : balance and deposit.
 
 ### 2. Crate Order API key
 
-Crate Order API key are used for creating order, such as balance, open orders , deposit address.
+Crate Order API key are used for creating order.
 
 ```
 required permissions : create order. (Recommended to enable 2FA for safety.)
@@ -163,7 +164,7 @@ required permissions : create order. (Recommended to enable 2FA for safety.)
 
 ### 3. Cancel Order API key
 
-Cancel Order API key are used for canceling order information, such as balance, open orders , deposit address.
+Cancel Order API key are used for canceling order.
 
 ```
 required permissions : cancel order. (Recommended to enable 2FA for safety.)

@@ -8,7 +8,7 @@ class BxMarketDataDao {
 
   BxMarketDataDao.fromJson(Map<String, dynamic> json) {
     listPairCurrency = List();
-    for(int id in BxPairCurrencyManager.LIST_PAIR_CURRENCY_ID){
+    for(int id in BxPairCurrencyManager.listPairCurrencyId){
       if(json['$id'] != null) {
         listPairCurrency.add(BxPairCurrencyBxDao.fromJson(json['$id']));
       }

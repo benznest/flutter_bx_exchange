@@ -56,12 +56,12 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_bx_exchange:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: flutter_bx_exchange
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
