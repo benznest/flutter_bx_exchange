@@ -11,12 +11,6 @@
       <excludeFolder url="file://$MODULE_DIR$/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/build" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_bx_exchange/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_bx_exchange/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_bx_exchange/build" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_bx_exchange/example/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_bx_exchange/example/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_bx_exchange/example/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />

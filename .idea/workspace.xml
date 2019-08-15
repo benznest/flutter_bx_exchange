@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="4252301e-75b3-40af-8828-708fbd73a59b" name="Default" comment="fix bug.">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -33,6 +34,16 @@
       <change beforePath="$PROJECT_DIR$/lib/dao/get_deposit_address/bx_deposit_address_dao.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dao/get_deposit_address/bx_deposit_address_dao.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/dao/get_order/bx_open_order_response_dao.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dao/get_order/bx_open_order_response_dao.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+=======
+    <list default="true" id="4252301e-75b3-40af-8828-708fbd73a59b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/flutter_bx_sdk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dao/recent_trade/bx_high_bidk_dao.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_bx_exchange.iml" beforeDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -47,9 +58,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="flutter_bx_exchange" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/lib/bx_exchange_service.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
@@ -57,11 +72,18 @@
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/lib/bx_trade_type.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -69,46 +91,78 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/lib/dao/current_pairings/bx_current_pairings_dao.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/example/test/widget_test.dart">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="180">
               <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+=======
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+        <entry file="file://$PROJECT_DIR$/lib/bx_pair_currency_manager.dart">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="270">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
+=======
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bx_exchange-1.0.0/lib/dao/get_order/bx_open_order_response_dao.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/bx_pair_currency.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
               <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+=======
+        <entry file="file://$PROJECT_DIR$/lib/dao/get_deposit_address/bx_deposit_address_dao.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,15 +177,27 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/dao/create_order/bx_cretae_order_response_dao.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bx_pair_currency.dart">
+        <entry file="file://$PROJECT_DIR$/lib/dao/cancel_order/bx_cancel_order_response_dao.dart">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="285">
               <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+=======
+            <state relative-caret-position="17">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="30" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -157,17 +223,23 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>printJ</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/lib/dao/VolumeDataDao.dart" />
+        <option value="$PROJECT_DIR$/lib/dao/bx_order_book_dao.dart" />
+        <option value="$PROJECT_DIR$/lib/flutter_bx_exchange.dart" />
+        <option value="$PROJECT_DIR$/test/flutter_bx_exchange_test.dart" />
+        <option value="$PROJECT_DIR$/example/test/widget_test.dart" />
+        <option value="$PROJECT_DIR$/lib/bx_exchange.dart" />
+        <option value="$PROJECT_DIR$/lib/dao/bx_pair_currency_dao.dart" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/lib/dao/volume_data_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/bx_market_data_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/bx_pair_currency_manager.dart" />
@@ -186,10 +258,12 @@
         <option value="$PROJECT_DIR$/lib/dao/recent_trade/bx_recent_trade_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/historical_trade_data/bx_historical_trade_data_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/historical_trade_data/bx_historical_trade_data_response_dao.dart" />
+        <option value="$PROJECT_DIR$/lib/bx_utils.dart" />
         <option value="$PROJECT_DIR$/lib/dao/historical_trade_data/bx_balance_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/balance/bx_balance_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/balance/bx_balance_response_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/balance/bx_balance_currency_dao.dart" />
+        <option value="$PROJECT_DIR$/lib/bx_pair_currency_manager.dart" />
         <option value="$PROJECT_DIR$/lib/dao/balance/bx_order_response_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/get_order/bx_order_response_dao.dart" />
         <option value="$PROJECT_DIR$/lib/dao/get_order/bx_open_order_detail_dao.dart" />
@@ -203,6 +277,7 @@
         <option value="$PROJECT_DIR$/lib/bx_auth_utils.dart" />
         <option value="$PROJECT_DIR$/lib/bx_trade_type.dart" />
         <option value="$PROJECT_DIR$/lib/dao/create_order/bx_cancel_order_response_dao.dart" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/lib/dao/create_order/bx_cretae_order_response_dao.dart" />
         <option value="$PROJECT_DIR$/lib/bx_utils.dart" />
         <option value="$PROJECT_DIR$/lib/bx_pair_currency.dart" />
@@ -227,6 +302,20 @@
     <option name="y" value="23" />
     <option name="width" value="1265" />
     <option name="height" value="703" />
+=======
+        <option value="$PROJECT_DIR$/lib/bx_exchange_service.dart" />
+        <option value="$PROJECT_DIR$/lib/dao/create_order/bx_cretae_order_response_dao.dart" />
+        <option value="$PROJECT_DIR$/example/lib/main.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -236,7 +325,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="Scope" />
+=======
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +341,7 @@
               <item name="flutter_bx_exchange" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< Updated upstream
             <path>
               <item name="flutter_bx_exchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_bx_exchange" type="462c0819:PsiDirectoryNode" />
@@ -271,11 +364,19 @@
               <item name="flutter_bx_exchange" type="462c0819:PsiDirectoryNode" />
               <item name="screenshot" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> Stashed changes
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< Updated upstream
       <pane id="PackagesPane" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,19 +387,19 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\create_order" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_deposit_address" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\withdraw_history" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib" />
+      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\balance" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\cancel_order" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\create_order" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_deposit_address" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_order" />
       <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\balance" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Work\flutter project\flutter_bx_exchange\screenshot" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\create_order" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\get_deposit_address" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib\dao\withdraw_history" />
-      <recent name="C:\Work\Flutter Project\flutter_bx_exchange\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -410,8 +511,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1562514648139" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1562687150380" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -459,25 +559,11 @@
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
       </Profilers>
       <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1562514648139" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1562687150381" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="flutter_bx_exchange_android" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -544,224 +630,66 @@
       <option name="project" value="LOCAL" />
       <updated>1562428195752</updated>
     </task>
-    <task id="LOCAL-00002" summary="reademe">
-      <created>1562555938198</created>
+    <task id="LOCAL-00002" summary="add get balance api.&#10;add cancel order.&#10;add create order api.&#10;add get open order.&#10;add get current pairing.&#10;add get deposit address.&#10;add history trade data of currency.&#10;add recent trade.&#10;add transaction history.&#10;add withdraw history.">
+      <created>1562514778351</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1562555938198</updated>
+      <updated>1562514778351</updated>
     </task>
-    <task id="LOCAL-00003" summary="reademe">
-      <created>1562556247358</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1562556247358</updated>
-    </task>
-    <task id="LOCAL-00004" summary="reademe">
-      <created>1562556573700</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1562556573700</updated>
-    </task>
-    <task id="LOCAL-00005" summary="reademe">
-      <created>1562556644826</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1562556644826</updated>
-    </task>
-    <task id="LOCAL-00006" summary="reademe">
-      <created>1562556914420</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1562556914420</updated>
-    </task>
-    <task id="LOCAL-00007" summary="reademe">
-      <created>1562557076165</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1562557076165</updated>
-    </task>
-    <task id="LOCAL-00008" summary="reademe">
-      <created>1562557602608</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1562557602608</updated>
-    </task>
-    <task id="LOCAL-00009" summary="reademe">
-      <created>1562558034869</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1562558034869</updated>
-    </task>
-    <task id="LOCAL-00010" summary="reademe">
-      <created>1562558501268</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1562558501268</updated>
-    </task>
-    <task id="LOCAL-00011" summary="reademe">
-      <created>1562558526451</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1562558526451</updated>
-    </task>
-    <task id="LOCAL-00012" summary="reademe">
-      <created>1562559659883</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1562559659883</updated>
-    </task>
-    <task id="LOCAL-00013" summary="reademe">
-      <created>1562559969959</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1562559969959</updated>
-    </task>
-    <task id="LOCAL-00014" summary="reademe">
-      <created>1562560495823</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1562560495823</updated>
-    </task>
-    <task id="LOCAL-00015" summary="reademe">
-      <created>1562561241886</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1562561241886</updated>
-    </task>
-    <task id="LOCAL-00016" summary="reademe">
-      <created>1562561278829</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1562561278829</updated>
-    </task>
-    <task id="LOCAL-00017" summary="reademe">
-      <created>1562567681339</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1562567681339</updated>
-    </task>
-    <task id="LOCAL-00018" summary="reademe">
-      <created>1562568005413</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1562568005413</updated>
-    </task>
-    <task id="LOCAL-00019" summary="reademe">
-      <created>1562568117831</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1562568117831</updated>
-    </task>
-    <task id="LOCAL-00020" summary="reademe">
-      <created>1562568323713</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1562568323713</updated>
-    </task>
-    <task id="LOCAL-00021" summary="reademe">
-      <created>1562568437020</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1562568437020</updated>
-    </task>
-    <task id="LOCAL-00022" summary="reademe">
-      <created>1562569711907</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1562569711907</updated>
-    </task>
-    <task id="LOCAL-00023" summary="reademe">
-      <created>1562570051349</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1562570051349</updated>
-    </task>
-    <task id="LOCAL-00024" summary="reademe">
-      <created>1562570230629</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1562570230629</updated>
-    </task>
-    <task id="LOCAL-00025" summary="reademe">
-      <created>1562570686933</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1562570686933</updated>
-    </task>
-    <task id="LOCAL-00026" summary="reademe">
-      <created>1562571450696</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1562571450696</updated>
-    </task>
-    <task id="LOCAL-00027" summary="reademe">
-      <created>1562571957364</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1562571957364</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="0" y="23" width="1280" height="703" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3206785" />
+=======
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <layout>
+      <window_info id="Resources Explorer" order="0" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Captures" order="6" />
+      <window_info id="Favorites" order="5" sideWeight="0.5012531" side_tool="true" weight="0.24962178" />
+      <window_info id="Captures" order="6" sideWeight="0.5012531" side_tool="true" weight="0.24962178" />
       <window_info id="Capture Tool" order="7" />
-      <window_info id="Resources Explorer" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.49874687" visible="true" weight="0.24962178" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Run" order="2" weight="0.39443535" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22222222" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32991454" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Logcat" order="10" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.2782324" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.29459903" />
       <window_info anchor="bottom" id="Flutter Performance" order="14" side_tool="true" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="11" visible="true" weight="0.36464968" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2786325" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.2923077" />
+>>>>>>> Stashed changes
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Fabric" order="3" weight="0.32980332" />
-      <window_info anchor="right" id="Flutter Inspector" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Fabric" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" />
       <window_info anchor="right" id="Flutter Outline" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -806,11 +734,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add market data api (ticker)" />
+<<<<<<< Updated upstream
     <MESSAGE value="reademe" />
     <MESSAGE value="fix bug." />
     <option name="LAST_COMMIT_MESSAGE" value="fix bug." />
   </component>
   <component name="editorHistoryManager">
+=======
+    <MESSAGE value="add get balance api.&#10;add cancel order.&#10;add create order api.&#10;add get open order.&#10;add get current pairing.&#10;add get deposit address.&#10;add history trade data of currency.&#10;add recent trade.&#10;add transaction history.&#10;add withdraw history." />
+    <option name="LAST_COMMIT_MESSAGE" value="add get balance api.&#10;add cancel order.&#10;add create order api.&#10;add get open order.&#10;add get current pairing.&#10;add get deposit address.&#10;add history trade data of currency.&#10;add recent trade.&#10;add transaction history.&#10;add withdraw history." />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/flutter_bx_exchange_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/current_pairings/bx_pair_curency_meta_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/market_data/bx_volume_data_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/lib/dao/market_data/bx_pair_currency_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -829,15 +785,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="44" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#79#0" />
-          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/../../flutter/flutter/bin/cache/pkg/sky_engine/lib/core/uri.dart" />
     <entry file="file://$PROJECT_DIR$/../../flutter/flutter/bin/cache/dart-sdk/lib/_http/http_impl.dart" />
     <entry file="file://$PROJECT_DIR$/../AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/http-0.12.0+2/lib/src/base_client.dart" />
+=======
+    <entry file="file://$PROJECT_DIR$/../../flutter/flutter/bin/cache/pkg/sky_engine/lib/core/uri.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-421">
+          <caret line="618" column="9" selection-start-line="618" selection-start-column="9" selection-end-line="618" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../flutter/flutter/bin/cache/dart-sdk/lib/_http/http_impl.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="2120" column="8" selection-start-line="2120" selection-start-column="8" selection-end-line="2120" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/http-0.12.0+2/lib/src/base_client.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/lib/dao/order_book/bx_order_book_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -845,7 +822,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/../AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/http-0.12.0+2/lib/http.dart" />
+=======
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/http-0.12.0+2/lib/http.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/lib/dao/recent_trade/bx_high_bid_dao.dart" />
     <entry file="file://$PROJECT_DIR$/lib/dao/order_book/bx_order_book_detail_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
@@ -858,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,22 +859,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#79#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/../AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.0.6/lib/crypto.dart" />
     <entry file="file://$PROJECT_DIR$/../AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.0.6/lib/src/sha256.dart" />
     <entry file="file://$PROJECT_DIR$/../AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.0.6/lib/src/hash.dart" />
     <entry file="file://C:/wamp/www/bx.php" />
     <entry file="file://$PROJECT_DIR$/../../flutter/flutter/bin/cache/pkg/sky_engine/lib/core/string.dart" />
     <entry file="file://$PROJECT_DIR$/lib/dao/balance/bx_balance_currency_dao.dart">
+=======
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.0.6/lib/crypto.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.0.6/lib/src/sha256.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.0.6/lib/src/hash.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp/www/bx.php">
+>>>>>>> Stashed changes
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../flutter/flutter/bin/cache/pkg/sky_engine/lib/core/string.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="95" column="69" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/balance/bx_balance_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/balance/bx_balance_currency_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/balance/bx_balance_response_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/get_order/bx_open_order_detail_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/get_order/bx_open_order_response_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -897,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,6 +966,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -928,101 +974,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="44" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/withdraw_history/bx_withdraw_transaction_dao.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bx_trade_type.dart">
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/lib/dao/get_order/bx_open_order_detail_dao.dart">
+=======
+    <entry file="file://$PROJECT_DIR$/lib/dao/withdraw_history/bx_withdraw_transaction_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/create_order/bx_cretae_order_response_dao.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/cancel_order/bx_cancel_order_response_dao.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="493">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/dao/transaction_history/bx_transaction_history_dao.dart">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/balance/bx_balance_dao.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/balance/bx_balance_response_dao.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/get_order/bx_open_order_detail_dao.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/dao/withdraw_history/bx_withdraw_history_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/../../flutter/packages/flutter/lib/src/foundation/print.dart" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/bx_exchange_service.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5984">
+          <caret line="376" column="32" selection-start-line="376" selection-start-column="32" selection-end-line="376" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/apiKey/bx_api_key.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/lib/bx_auth_utils.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="153">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bx_utils.dart">
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
-            <element signature="e#1#23#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
+    <entry file="file://$PROJECT_DIR$/lib/dao/get_deposit_address/bx_deposit_address_dao.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/lib/dao/apiKey/bx_api_key.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1106,18 +1136,70 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/lib/dao/create_order/bx_cretae_order_response_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/cancel_order/bx_cancel_order_response_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bx_trade_type.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/test/widget_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bx_pair_currency_manager.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/current_pairings/bx_current_pairings_dao.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+=======
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="180">
           <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
@@ -1127,6 +1209,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+=======
+        <state relative-caret-position="221">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
