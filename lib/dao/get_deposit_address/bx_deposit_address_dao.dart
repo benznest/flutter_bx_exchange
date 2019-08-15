@@ -9,7 +9,7 @@ class BxDepositAddressDao {
   BxDepositAddressDao.fromJson(Map<String, dynamic> json) {
     success = json['success'];
     error = json['error'];
-    address = json['address'];
+    address = json['address'] == false ? null : json['address'];
   }
 
   Map<String, dynamic> toJson() {

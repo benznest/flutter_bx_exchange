@@ -12,7 +12,10 @@ class BxOpenOrderResponseDao {
     success = json['success'];
 
     List listOrder = json['orders'];
-    orders = listOrder.map((item) => BxOpenOrderDetailDao.fromJson(item)).toList();
+    if(listOrder != null) {
+      orders =
+          listOrder.map((item) => BxOpenOrderDetailDao.fromJson(item)).toList();
+    }
     error = json['error'] ?? "";
   }
 

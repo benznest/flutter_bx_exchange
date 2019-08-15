@@ -225,7 +225,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      printPrettyJson(responseJson.toJson());
+      printPrettyJson(responseJson);
     }
 
     return responseGetOrder;
@@ -263,7 +263,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      printPrettyJson(responseJson.toJson());
+      printPrettyJson(responseJson);
     }
 
     return responseHistory;
@@ -289,7 +289,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      printPrettyJson(responseJson.toJson());
+      printPrettyJson(responseJson);
     }
 
     return responseWithdrawHistory;
@@ -319,12 +319,13 @@ class BxExchangeService {
     });
 
     final responseJson = json.decode(response.body);
+    print(responseJson);
     BxDepositAddressDao responseDepositAddress = BxDepositAddressDao.fromJson(responseJson);
     if (printJson) {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      printPrettyJson(responseJson.toJson());
+      printPrettyJson(responseJson);
     }
 
     return responseDepositAddress;
@@ -362,7 +363,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      printPrettyJson(responseJson.toJson());
+      printPrettyJson(responseJson);
     }
 
     return responseCreateOrder;
@@ -397,7 +398,7 @@ class BxExchangeService {
       print(url);
       print("nonce = $nonce");
       print("signature = " + signature);
-      printPrettyJson(responseJson.toJson());
+      printPrettyJson(responseJson);
     }
 
     return responseCancelOrder;
