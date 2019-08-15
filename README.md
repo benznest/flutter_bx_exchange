@@ -7,7 +7,7 @@ package on [Pub.dev](https://pub.dev/packages/flutter_bx_exchange)
 Add dependencies in pubspec.yaml
 
 ```bash
-flutter_bx_exchange: 1.0.0
+flutter_bx_exchange: 1.0.1
 ```
 
 ## Usage
